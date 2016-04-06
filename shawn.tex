@@ -1,0 +1,163 @@
+%-------------------------
+% Resume in Latex
+% Author : Shaoqing Yu (Shawn)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex,ocgcolorlinks]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{3pt}
+    \textit{\small#3}   
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://www.linkedin.com/in/yushaoqing}{\Large Shaoqing Yu (Shawn)}} & Email : \href{mailto:syu702@aucklanduni.ac.nz}{syu702@aucklanduni.ac.nz}\\
+  \href{http://www.linkedin.com/in/yushaoqing}{http://www.linkedin.com/in/yushaoqing} & Mobile : +64-021-151-8850 \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The University of Auckland}{Auckland, NZ}
+      {Research Assistant on MPAid (Maori Pronunciation Aid)}{Nov. 2015 - Mar. 2016}
+      \resumeItemListStart
+        \resumeItem{Research \& Design}
+          {Took over the project and studied the associated backgroud knowledge. Cleaned the legacy code and re-designed the architecture as well as the UI.}
+        \resumeItem{Speech Recognition}
+          {Built the Maori language model by an open-source toolkit named HTK. Automated the languae model building process by Perl and batch. Improved the recognition rate from 44.6\% to 80.4\%.}
+        \resumeItem{Evaluation \& Feedback}
+          {Implemented a score board to record users' pronoucing performance, analyse the recognition results and provide valuable feedbacks.}
+        \resumeItem{Media}
+          {Integrated the NAudio library to play and generate audio recoordings. Embedded the VLC player to play the videos of pronuncing demostrations.}
+        \resumeItem{Document}
+          {Uploaded and managed the source code on Github. Wrote the project wiki and  kept releasing new versions.}
+        \resumeItem{Future Plan}
+          {Wrote a detailed proposal about migrating the MPAid from desktop to mobile and server-hosting.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {The Second Academy of China Aerospace}{Beijing, China}
+      {Leader of iTos (Intelligent Transmitting Online System) team}{Apr. 2013 and Feb. 2015}
+      \resumeItemListStart
+        \resumeItem{Design}
+          {Designed the iTos, which can dynamically change the quality of transmitted media according to the bandwidth.}
+        \resumeItem{Implementation}
+          {Re-wrote the notwork component by IOCP to improve the parallel transportation. Built the media decoding/encoding/transmitting core by ffmpeg and RTSP protocol. Implemented the system sanpshot function to recover node server from fatal errors.}
+        \resumeItem{Promotion}
+          {Promoted and deployed the iTos to 3 military bases.}
+        \resumeItem{Team Building}
+          {Built an outstanding team who won the prize "the excellent team of 2014".}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{The \href{http://getskillslabs.com/}{Getskills} Website}{The University of Auckland}
+      {An online education employment website developed with C\# and running on microsoft Azure server for a New Zealand company named Getskills.}
+    \resumeSubItem{The \href{https://github.com/YsqEvilmax/MPAid.git}{MPAid} (Maori Pronunciation Aid)}{The University of Auckland}
+      {A software on .Net platform with Maori speech recognition and evaluation system to help Maori speaker improve their pronouciation.}
+    \resumeSubItem{The iTos (Intelligent Transmitting Online System)}{The Second Academy of China Aerospace}
+      {A system with a high performance in massive media distributing and delivery.}
+    \resumeSubItem{Children Cognitive System}{The Beihang University}
+      {An education paltform which applied AR (Augmented Reality) and VR (Voice Recognization) technologies to improve the interaction between computers and children, aming to help pre-educational children effectively learn some abstract objects like thunder, wind and fog.}
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The University of Auckland}{Auckland, NZ}
+      {Master of Engineering in Software Engineering;  GPA: 7.75/9.00}{Aug. 2015 -- Jun. 2016}
+    \resumeSubheading
+      {The Beihang University}{Beijing, China}
+      {Bachelor of Engineering in Software Engineering;  GPA: 3.71/4.00}{Aug. 2009 -- Jul. 2013}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: C/C++/C\#/Java/PHP/Javascript/HTML/CSS/Perl}
+      \hfill
+      \textbf{Platforms}{: Windows/Linux}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
